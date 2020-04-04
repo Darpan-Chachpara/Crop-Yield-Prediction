@@ -1,0 +1,96 @@
+{% include "header.html" %}
+	<div class="content">
+	<div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="c1">
+                    <h1>Smart Farm</h1>
+                    <form class="form-group" action="/predict" method="POST">
+                        <div class="form-group col-md-6 col-md-offset-3">
+                            <label for="exampleInputName2">Select District : </label>
+                            <select name="district" class="form-control" id="di" onChange="selDist();">
+                                <option>AHMEDNAGAR</option>
+                                <option>AKOLA</option>
+                                <option>AMRAVATI</option>
+                                <option>AURANGABAD</option>
+                                <option>BEED</option>
+                                <option>BHANDARA</option>
+                                <option>BULDHANA</option>
+                                <option>CHANDRAPUR</option>
+                                <option>DHULE</option>
+                                <option>GADCHIROLI</option>
+                                <option>GONDIA</option>
+                                <option>HINGOLI</option>
+                                <option>JALGAON</option>
+                                <option>JALNA</option>
+                                <option>KOLHAPUR</option>
+                                <option>LATUR</option>
+                                <option>NAGPUR</option>
+                                <option>NANDED</option>
+                                <option>NANDURBAR</option>
+                                <option>NASHIK</option>
+                                <option>OSMANABAD</option>
+                                <option>PARBHANI</option>
+                                <option>PUNE</option>
+                                <option>SANGLI</option>
+                                <option>SATARA</option>
+                                <option>SOLAPUR</option>
+                                <option>WARDHA</option>
+                                <option>WASHIM</option>
+                                <option>YAVATMAL</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6 col-md-offset-3">
+                            <label for="exampleInputEmail2">Select Crop : </label>
+                            <select name="crop" class="form-control" id="cr" onChange="selCrop();">
+                                <option>Arhar/Tur</option>
+                                <option>Bajra</option>
+                                <option>Gram</option>
+                                <option>Jowar</option>
+                                <option>Maize</option>
+                                <option>Moong(Green Gram)</option>
+                                <option>Pulses total</option>
+                                <option>Ragi</option>
+                                <option>Rice</option>
+                                <option>Sugarcane</option>
+                                <option>Total foodgrain</option>
+                                <option>Urad</option>
+                                <option>Other Rabi pulses</option>
+                                <option>Wheat</option>
+                                <option>Cotton(lint)</option>
+                                <option>Castor seed</option>
+                                <option>Groundnut</option>
+                                <option>Niger seed</option>
+                                <option>Other Cereals & Millets</option>
+                                <option>Other Kharif pulses</option>
+                                <option>Sesamum</option>
+                                <option>Soyabean</option>
+                                <option>Sunflower</option>
+                                <option>Linseed</option>
+                                <option>Safflower</option>
+                                <option>Small millets</option>
+                                <option>Rapeseed &Mustard</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6 col-md-offset-3">
+                            <label for="exampleInputName2">Select Season : </label>
+                                <select id="se" name="season" class="form-control">
+                                <option>Kharif</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6 col-md-offset-3">
+                            <label for="predict">Enter Area (Hectare) : </label>
+                            <input type="text" class="form-control" id="predict" name="area" required>
+                        </div>
+                        <div class="form-group col-md-6 col-md-offset-3">
+                        	<hr>
+                        	<button type="submit" class="btn btn-default col-md-6 col-md-offset-3">Predict</button>	
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+{% include "footer.html" %}
